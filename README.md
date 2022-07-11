@@ -1,5 +1,5 @@
 # Snake-Game-But-Your-the-food
- Tweaked/Fixed by me
+ Made by YkDojo Tweaked/Fixed by me
 
 **Step 1**
 `To Run this project clone it`
