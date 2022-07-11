@@ -17,7 +17,7 @@ dead = False
 BORDER = '⬜️'
 BODY = '🟩'
 HEAD = '🟥'
-SPACE = ' '
+SPACE = '⬛'
 APPLE = '🍎'
 
 # initial snake position
@@ -70,11 +70,12 @@ with term.cbreak(), term.hidden_cursor():
   world[head[0]][head[1]] = HEAD
   world[food[0]][food[1]] = APPLE
   for row in world:
-    print(' '.join(row))
+    print(''.join(row))
   print('use arrow keys or WASD to move!')
   print("this time, you're the food 😱\n")
   print('I recommend expanding the terminal window')
   print('so the game has enough space to run')
+  print('Made by your dad')
 
   val = ''
   moving = False
@@ -180,7 +181,7 @@ with term.cbreak(), term.hidden_cursor():
 
     print(term.move_yx(0, 0))
     for row in world:
-      print(' '.join(row))
+      print(''.join(row))
     score = len(snake) - 3
     print(f'score: {turn} - size: {len(snake)}' + term.clear_eol)
     if dead:
